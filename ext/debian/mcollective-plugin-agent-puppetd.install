@@ -1,0 +1,1 @@
+agent/puppetd/puppetd.rb usr/share/mcollective/plugins/mcollective/agent/

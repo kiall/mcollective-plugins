@@ -1,0 +1,344 @@
+Source: mcollective-plugins
+Section: utils
+Priority: extra
+Maintainer: Kiall Mac Innes <kiall@managedit.ie>
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.8.0
+Homepage: http://www.puppetlabs.com/
+Vcs-Git: https://github.com/puppetlabs/mcollective-plugins.git
+Vcs-Browser: https://github.com/puppetlabs/mcollective-plugins
+
+########
+# AGENTS
+########
+
+Package: mcollective-plugin-agent-iptables-common
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective-common (>= 1.1.0), ${misc:Depends}
+Description: MCollective IPTables Agent
+ MCollective IPTables Agent
+ .
+ Common Component
+
+Package: mcollective-plugin-agent-iptables
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective (>= 1.1.0), mcollective-plugin-agent-iptables-common, ${misc:Depends}
+Description: MCollective IPTables Agent
+ MCollective IPTables Agent
+ .
+ Agent Component
+
+Package: mcollective-plugin-agent-iptables-client
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective-client (>= 1.1.0), mcollective-plugin-agent-iptables-common, ${misc:Depends}
+Description: MCollective IPTables Agent
+ MCollective IPTables Agent
+ .
+ Client Component
+
+####
+
+Package: mcollective-plugin-agent-nettest-common
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective-common (>= 1.1.0), ${misc:Depends}
+Description: MCollective NetTest Agent
+ MCollective NetTest Agent
+ .
+ Common Component
+
+Package: mcollective-plugin-agent-nettest
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective (>= 1.1.0), mcollective-plugin-agent-nettest-common, ${misc:Depends}
+Description: MCollective NetTest Agent
+ MCollective NetTest Agent
+ .
+ Agent Component
+
+####
+
+Package: mcollective-plugin-agent-nrpe-common
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective-common (>= 1.1.0), ${misc:Depends}
+Description: MCollective NRPE Agent
+ MCollective NRPE Agent
+ .
+ Common Component
+
+Package: mcollective-plugin-agent-nrpe
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective (>= 1.1.0), mcollective-plugin-agent-nrpe-common, ${misc:Depends}
+Description: MCollective NRPE Agent
+ MCollective NRPE Agent
+ .
+ Agent Component
+
+Package: mcollective-plugin-agent-nrpe-client
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective-client (>= 1.1.0), mcollective-plugin-agent-nrpe-common, ${misc:Depends}
+Description: MCollective NRPE Agent
+ MCollective NRPE Agent
+ .
+ Client Component
+
+Package: mcollective-plugin-agent-nrpe-nagios
+Architecture: all
+Depends: ruby (>= 1.8.1), nagios-plugins-basic (>= 1.4.5-2), mcollective-common (>= 1.1.0), mcollective-plugin-agent-nrpe-common, ${misc:Depends}
+Description: Nagios MCollective NRPE Agent plugin
+ MCollective NRPE Agent
+ .
+ Nagios Plugin Component
+
+####
+
+Package: mcollective-plugin-agent-package-common
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective-common (>= 1.1.0), ${misc:Depends}
+Description: MCollective Package Agent
+ MCollective Package Agent
+ .
+ Common Component
+
+Package: mcollective-plugin-agent-package
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective (>= 1.1.0), mcollective-plugin-agent-package-common, ${misc:Depends}
+Description: MCollective Package Agent
+ MCollective Package Agent
+ .
+ Agent Component
+
+Package: mcollective-plugin-agent-package-client
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective-client (>= 1.1.0), mcollective-plugin-agent-package-common, ${misc:Depends}
+Description: MCollective Package Agent
+ MCollective Package Agent
+ .
+ Client Component
+
+####
+
+Package: mcollective-plugin-agent-process-common
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective-common (>= 1.1.0), ${misc:Depends}
+Description: MCollective Process Agent
+ MCollective Process Agent
+ .
+ Common Component
+
+Package: mcollective-plugin-agent-process
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective (>= 1.1.0), mcollective-plugin-agent-process-common, ${misc:Depends}
+Description: MCollective Process Agent
+ MCollective Process Agent
+ .
+ Agent Component
+
+Package: mcollective-plugin-agent-process-client
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective-client (>= 1.1.0), mcollective-plugin-agent-process-common, ${misc:Depends}
+Description: MCollective Process Agent
+ MCollective Process Agent
+ .
+ Client Component
+
+####
+
+Package: mcollective-plugin-agent-puppetca-common
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective-common (>= 1.1.0), ${misc:Depends}
+Description: MCollective PuppetCA Agent
+ MCollective PuppetCA Agent
+ .
+ Common Component
+
+Package: mcollective-plugin-agent-puppetca
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective (>= 1.1.0), mcollective-plugin-agent-puppetca-common, ${misc:Depends}
+Description: MCollective PuppetCA Agent
+ MCollective PuppetCA Agent
+ .
+ Agent Component
+
+####
+
+Package: mcollective-plugin-agent-puppetd-common
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective-common (>= 1.1.0), ${misc:Depends}
+Description: MCollective puppetd Agent
+ MCollective puppetd Agent
+ .
+ Common Component
+
+Package: mcollective-plugin-agent-puppetd
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective (>= 1.1.0), mcollective-plugin-agent-puppetd-common, ${misc:Depends}
+Description: MCollective puppetd Agent
+ MCollective puppetd Agent
+ .
+ Agent Component
+
+Package: mcollective-plugin-agent-puppetd-client
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective-client (>= 1.1.0), mcollective-plugin-agent-puppetd-common, ${misc:Depends}
+Description: MCollective puppetd Agent
+ MCollective puppetd Agent
+ .
+ Client Component
+
+####
+
+Package: mcollective-plugin-agent-puppetral
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective (>= 1.1.0), ${misc:Depends}
+Description: MCollective puppetral Agent
+ MCollective puppetral Agent
+ .
+ Agent Component
+
+####
+
+Package: mcollective-plugin-agent-registration-mongodb
+Provides: mcollective-plugin-agent-registration
+Conflicts: mcollective-plugin-agent-registration
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective (>= 1.1.0), ${misc:Depends}
+Description: MCollective MongoDB Registration Agent
+ MCollective MongoDB Registration Agent
+ .
+ Agent Component
+
+Package: mcollective-plugin-agent-registration-mongodb-nagios
+Provides: mcollective-plugin-agent-registration-nagios
+Conflicts: mcollective-plugin-agent-registration-nagios
+Architecture: all
+Depends: ruby (>= 1.8.1), nagios-plugins-basic (>= 1.4.5-2), ${misc:Depends}
+Description: NMCollective MongoDB Registration Agent
+ MCollective MongoDB Registration Agent
+ .
+ Nagios Plugin Component
+
+Package: mcollective-plugin-agent-registration-mongodb-puppet
+Architecture: all
+Depends: ruby (>= 1.8.1), puppet (>= 2.6.1), ${misc:Depends}
+Description: NMCollective MongoDB Registration Agent
+ MCollective MongoDB Registration Agent
+ .
+ Puppet Plugin Component
+
+####
+
+Package: mcollective-plugin-agent-registration-monitor
+Provides: mcollective-plugin-agent-registration
+Conflicts: mcollective-plugin-agent-registration
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective (>= 1.1.0), ${misc:Depends}
+Description: MCollective Monitor Registration Agent
+ MCollective Monitor Registration Agent
+ .
+ Agent Component
+
+Package: mcollective-plugin-agent-registration-monitor-nagios
+Provides: mcollective-plugin-agent-registration-nagios
+Conflicts: mcollective-plugin-agent-registration-nagios
+Architecture: all
+Depends: ruby (>= 1.8.1), nagios-plugins-basic (>= 1.4.5-2), ${misc:Depends}
+Description: NMCollective Monitor Registration Agent
+ MCollective Monitor Registration Agent
+ .
+ Nagios Plugin Component
+
+####
+
+Package: mcollective-plugin-agent-service-common
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective-common (>= 1.1.0), ${misc:Depends}
+Description: MCollective service Agent
+ MCollective service Agent
+ .
+ Common Component
+
+Package: mcollective-plugin-agent-service
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective (>= 1.1.0), mcollective-plugin-agent-service-common, ${misc:Depends}
+Description: MCollective service Agent
+ MCollective service Agent
+ .
+ Agent Component
+
+Package: mcollective-plugin-agent-service-client
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective-client (>= 1.1.0), mcollective-plugin-agent-service-common, ${misc:Depends}
+Description: MCollective service Agent
+ MCollective service Agent
+ .
+ Client Component
+
+####
+
+Package: mcollective-plugin-agent-stomputil-common
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective-common (>= 1.1.0), ${misc:Depends}
+Description: MCollective stomputil Agent
+ MCollective stomputil Agent
+ .
+ Common Component
+
+Package: mcollective-plugin-agent-stomputil
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective (>= 1.1.0), mcollective-plugin-agent-stomputil-common, ${misc:Depends}
+Description: MCollective stomputil Agent
+ MCollective stomputil Agent
+ .
+ Agent Component
+
+Package: mcollective-plugin-agent-stomputil-client
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective-client (>= 1.1.0), mcollective-plugin-agent-stomputil-common, ${misc:Depends}
+Description: MCollective stomputil Agent
+ MCollective stomputil Agent
+ .
+ Client Component
+
+##############
+# FACT SOURCES
+##############
+
+Package: mcollective-plugin-facts-facter
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective-common (>= 1.1.0), ${misc:Depends}
+Description: MCollective Facter fact source
+ MCollective Facter fact source
+
+####
+
+Package: mcollective-plugin-facts-ohai
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective-common (>= 1.1.0), ${misc:Depends}
+Description: MCollective ohai fact source
+ MCollective ohai fact source
+
+##############
+# Registration
+##############
+
+Package: mcollective-plugin-registration-meta
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective-common (>= 1.1.0), ${misc:Depends}
+Description: MCollective meta registration plugin
+ MCollective meta registration plugin
+
+##############
+# Security
+##############
+
+Package: mcollective-plugin-security-none
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective-common (>= 1.1.0), ${misc:Depends}
+Description: MCollective No Security Plugin
+ Warning - This disables mcollective security when used!
+ MCollective No Security Plugin
+
+Package: mcollective-plugin-security-sshkey
+Architecture: all
+Depends: ruby (>= 1.8.1), mcollective-common (>= 1.1.0), ${misc:Depends}
+Description: MCollective SSH Key Security Plugin
+ MCollective SSH Key Security Plugin

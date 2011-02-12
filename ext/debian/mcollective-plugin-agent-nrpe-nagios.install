@@ -1,0 +1,1 @@
+agent/nrpe/check-mc-nrpe usr/lib/nagios/plugins/

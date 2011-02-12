@@ -1,0 +1,4 @@
+agent/registration-mongodb/puppet/mongoquery.rb usr/lib/ruby/1.8/puppet/util/
+agent/registration-mongodb/puppet/load_node.rb usr/lib/ruby/1.8/puppet/parser/function/
+agent/registration-mongodb/puppet/search_nodes.rb usr/lib/ruby/1.8/puppet/parser/function/
+agent/registration-mongodb/puppet/search_setup.rb usr/lib/ruby/1.8/puppet/parser/function/

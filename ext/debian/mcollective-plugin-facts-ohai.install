@@ -1,0 +1,1 @@
+facts/ohai/*.rb usr/share/mcollective/plugins/mcollective/facts/

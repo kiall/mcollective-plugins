@@ -1,0 +1,1 @@
+agent/registration-monitor/check_mcollective.rb usr/lib/nagios/plugins/
