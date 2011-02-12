@@ -16,16 +16,10 @@ PROJ_FILES = ["agent", "audit", "ext", "facts", "README.markdown", "registration
 PKG_MAINT_NAME = "Kiall Mac Innes"
 PKG_MAINT_EMAIL = "kiall@managedit.ie"
 
-PKG_DEB_DISTRIBUTION = "phostr"
-
-if ENV['RELEASE_STAGE'] then
-    PKG_DEB_DUPLOAD = "apt.phostr.net-" + ENV['RELEASE_STAGE']
-else
-    PKG_DEB_DUPLOAD = "apt.phostr.net-development"
-end
-
 # End Per Project Settings
 
+ENV['DEB_RELEASE_TO'] ? PKG_DEB_DUPLOAD = ENV['DEB_RELEASE_TO'] : PKG_DEB_DUPLOAD = nil
+ENV['DEB_DISTRIBUTION'] ? PKG_DEB_DISTRIBUTION = ENV['DEB_DISTRIBUTION'] : PKG_DEB_DISTRIBUTION = "unstable"
 ENV["BUILD_NUMBER"] ? CURRENT_RELEASE = ENV["BUILD_NUMBER"] : CURRENT_RELEASE = PROJ_RELEASE
 ENV["PKG_VERSION"] ? CURRENT_VERSION = ENV["PKG_VERSION"] : CURRENT_VERSION = PROJ_VERSION
 
